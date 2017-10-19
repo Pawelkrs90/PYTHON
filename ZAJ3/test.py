@@ -171,6 +171,20 @@ for x in listaPlikow:
 	print x.endswith(".py")
 		
 		
+def generatorPy(n):
+	yield n
+
+generatorPy = (x for x in listaPlikow if x.endswith(".py"))
+
+print("\nPliki z .py")
+
+#print(generatorPy.next())
+#print(generatorPy.next())
+
+for x in generatorPy:
+	print(x)
+
+		
 		
 		
 		
