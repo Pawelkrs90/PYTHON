@@ -166,9 +166,7 @@ print("\n\n")
 
 import os
 
-listaPlikow = os.listdir(".")
-for x in listaPlikow:
-	print x.endswith(".py")
+print(os.listdir("."))
 		
 		
 		
